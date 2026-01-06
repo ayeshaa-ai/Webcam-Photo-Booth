@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>💖 Aesthetic Photo Booth 💫</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="pink">
+  <!-- Floating Emoji Background -->
+  <div id="bg-emoji">💖</div>
+
+  <div class="container">
+    <h1>📸 Aesthetic Photo Booth 💕</h1>
+
+    <div class="controls">
+      <div class="select-row">
+        <label>🎨 Background:</label>
+        <select id="bg-select">
+          <option value="pink">Pink 💗</option>
+          <option value="white">White 🤍</option>
+          <option value="red">Blood Red ❤️</option>
+          <option value="black">Black 🖤</option>
+        </select>
+      </div>
+
+      <div class="select-row">
+        <label>💫 Emoji:</label>
+        <select id="emoji-select">
+          <option value="💖">Heart</option>
+          <option value="👑">Crown</option>
+          <option value="✨">Sparkle</option>
+          <option value="🌸">Flower</option>
+          <option value="⭐">Star</option>
+        </select>
+      </div>
+
+      <button id="start-btn">🎞️ Start Photo Session</button>
+      <button id="capture-btn" disabled>📸 Capture Photo</button>
+      <button id="download-btn" disabled>💾 Download Strip</button>
+    </div>
+
+    <div class="camera-section">
+      <video id="camera" autoplay playsinline></video>
+    </div>
+
+    <div id="photo-strip"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
